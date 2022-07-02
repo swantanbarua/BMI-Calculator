@@ -18,7 +18,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="m8h-Mu-2dK">
                                 <rect key="frame" x="0.0" y="44" width="428" height="848"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bou-sS-EC6">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bou-sS-EC6" userLabel="App Name View">
                                         <rect key="frame" x="0.0" y="0.0" width="428" height="211.33333333333334"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BMI Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="V5d-qx-TDD">
@@ -33,10 +33,10 @@
                                             <constraint firstItem="V5d-qx-TDD" firstAttribute="centerY" secondItem="bou-sS-EC6" secondAttribute="centerY" id="4Re-gc-6H9"/>
                                         </constraints>
                                     </view>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="KHB-hU-glo">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="KHB-hU-glo" userLabel="Height Stack View">
                                         <rect key="frame" x="0.0" y="212.33333333333331" width="428" height="211.33333333333331"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wcf-89-zyH">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wcf-89-zyH" userLabel="Height Details">
                                                 <rect key="frame" x="0.0" y="0.0" width="428" height="105"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="74" translatesAutoresizingMaskIntoConstraints="NO" id="q28-EV-PVS">
@@ -62,7 +62,7 @@
                                                     <constraint firstItem="q28-EV-PVS" firstAttribute="centerY" secondItem="wcf-89-zyH" secondAttribute="centerY" id="zts-w7-dcG"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aZd-8H-dpJ">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aZd-8H-dpJ" userLabel="Height Slider">
                                                 <rect key="frame" x="0.0" y="106" width="428" height="105.33333333333331"/>
                                                 <subviews>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="SFm-lX-IYL">
@@ -78,10 +78,10 @@
                                             </view>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="v4r-YK-oJR">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="v4r-YK-oJR" userLabel="Weight Stack View">
                                         <rect key="frame" x="0.0" y="424.66666666666674" width="428" height="211"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IaF-2v-Ixt">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IaF-2v-Ixt" userLabel="Weight Details">
                                                 <rect key="frame" x="0.0" y="0.0" width="428" height="105"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="68" translatesAutoresizingMaskIntoConstraints="NO" id="2cJ-pc-s8D">
@@ -107,7 +107,7 @@
                                                     <constraint firstItem="2cJ-pc-s8D" firstAttribute="centerY" secondItem="IaF-2v-Ixt" secondAttribute="centerY" id="M9T-fQ-b1n"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4jD-Vi-IUT">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4jD-Vi-IUT" userLabel="Weight Slider">
                                                 <rect key="frame" x="0.0" y="105.99999999999994" width="428" height="105"/>
                                                 <subviews>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Sgy-4T-t1F">
@@ -123,7 +123,7 @@
                                             </view>
                                         </subviews>
                                     </stackView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nHN-Tg-7IC">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nHN-Tg-7IC" userLabel="Calculate Button View">
                                         <rect key="frame" x="0.0" y="636.66666666666663" width="428" height="211.33333333333337"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqz-4x-sZp">
@@ -158,7 +158,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="402" y="63"/>
+            <point key="canvasLocation" x="121" y="59"/>
         </scene>
     </scenes>
 </document>
