@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -66,12 +65,16 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aZd-8H-dpJ">
                                                 <rect key="frame" x="0.0" y="106" width="428" height="105.33333333333331"/>
                                                 <subviews>
-                                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="SFm-lX-IYL">
-                                                        <rect key="frame" x="18" y="20" width="320" height="30"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="SFm-lX-IYL">
+                                                        <rect key="frame" x="68" y="37.666666666666686" width="292" height="31"/>
                                                     </slider>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="SFm-lX-IYL" secondAttribute="trailing" constant="70" id="85K-HL-6HI"/>
+                                                    <constraint firstItem="SFm-lX-IYL" firstAttribute="centerX" secondItem="aZd-8H-dpJ" secondAttribute="centerX" id="I9o-uI-65n"/>
+                                                    <constraint firstItem="SFm-lX-IYL" firstAttribute="centerY" secondItem="aZd-8H-dpJ" secondAttribute="centerY" id="TdV-Ex-JjL"/>
+                                                    <constraint firstItem="SFm-lX-IYL" firstAttribute="leading" secondItem="aZd-8H-dpJ" secondAttribute="leading" constant="70" id="ssO-Mp-HYd"/>
+                                                </constraints>
                                             </view>
                                         </subviews>
                                     </stackView>
@@ -107,12 +110,16 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4jD-Vi-IUT">
                                                 <rect key="frame" x="0.0" y="105.99999999999994" width="428" height="105"/>
                                                 <subviews>
-                                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Sgy-4T-t1F">
-                                                        <rect key="frame" x="18" y="20" width="392" height="30"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Sgy-4T-t1F">
+                                                        <rect key="frame" x="68" y="37.666666666666742" width="292" height="31"/>
                                                     </slider>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="Sgy-4T-t1F" firstAttribute="centerX" secondItem="4jD-Vi-IUT" secondAttribute="centerX" id="KWG-vp-Ujk"/>
+                                                    <constraint firstItem="Sgy-4T-t1F" firstAttribute="leading" secondItem="4jD-Vi-IUT" secondAttribute="leading" constant="70" id="Q6l-Lp-nQ4"/>
+                                                    <constraint firstItem="Sgy-4T-t1F" firstAttribute="centerY" secondItem="4jD-Vi-IUT" secondAttribute="centerY" id="gyk-zZ-RLb"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Sgy-4T-t1F" secondAttribute="trailing" constant="70" id="xQn-Pi-5lS"/>
+                                                </constraints>
                                             </view>
                                         </subviews>
                                     </stackView>
@@ -154,9 +161,4 @@
             <point key="canvasLocation" x="402" y="63"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>
