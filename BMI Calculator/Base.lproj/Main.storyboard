@@ -11,7 +11,7 @@
         <!--Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="BMIController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="BMIController" customModule="BMI_Calculator" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleAspectFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,6 +68,9 @@
                                                 <subviews>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="SFm-lX-IYL">
                                                         <rect key="frame" x="68" y="37.666666666666686" width="292" height="31"/>
+                                                        <connections>
+                                                            <action selector="heightSliderChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="O7d-23-j5o"/>
+                                                        </connections>
                                                     </slider>
                                                 </subviews>
                                                 <constraints>
@@ -113,6 +116,9 @@
                                                 <subviews>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Sgy-4T-t1F">
                                                         <rect key="frame" x="68" y="37.666666666666742" width="292" height="31"/>
+                                                        <connections>
+                                                            <action selector="weightSliderChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="d6E-Ud-Trr"/>
+                                                        </connections>
                                                     </slider>
                                                 </subviews>
                                                 <constraints>
@@ -137,6 +143,9 @@
                                                     <fontDescription key="titleFontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="50"/>
                                                     <color key="baseForegroundColor" red="0.13803476100000001" green="0.11480066930000001" blue="0.21961835029999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="calculateBMI:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4ki-Xp-7RY"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -156,10 +165,16 @@
                             <constraint firstItem="m8h-Mu-2dK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qhT-lf-0hC"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="heightLabel" destination="kIL-Zh-uwS" id="Td6-mO-uLe"/>
+                        <outlet property="heightSlider" destination="SFm-lX-IYL" id="hcc-X1-1Ql"/>
+                        <outlet property="weightLabel" destination="B1J-Zn-ERe" id="JQV-o1-eEX"/>
+                        <outlet property="weightSlider" destination="Sgy-4T-t1F" id="l1k-Xb-mbp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="48" y="75"/>
+            <point key="canvasLocation" x="24" y="56"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="sm8-Fz-VGu">
@@ -174,7 +189,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DJt-gg-FC4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="774" y="75"/>
+            <point key="canvasLocation" x="702" y="57"/>
         </scene>
     </scenes>
     <resources>

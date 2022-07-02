@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		CB3ED5062870095300BF938D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3ED5052870095300BF938D /* AppDelegate.swift */; };
 		CB3ED5082870095300BF938D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3ED5072870095300BF938D /* SceneDelegate.swift */; };
-		CB3ED50A2870095300BF938D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3ED5092870095300BF938D /* ViewController.swift */; };
+		CB3ED50A2870095300BF938D /* BMIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3ED5092870095300BF938D /* BMIController.swift */; };
 		CB3ED50D2870095300BF938D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB3ED50B2870095300BF938D /* Main.storyboard */; };
 		CB3ED50F2870095600BF938D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB3ED50E2870095600BF938D /* Assets.xcassets */; };
 		CB3ED5122870095600BF938D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB3ED5102870095600BF938D /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		CB3ED5022870095300BF938D /* BMI Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BMI Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB3ED5052870095300BF938D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB3ED5072870095300BF938D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CB3ED5092870095300BF938D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB3ED5092870095300BF938D /* BMIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIController.swift; sourceTree = "<group>"; };
 		CB3ED50C2870095300BF938D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB3ED50E2870095600BF938D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB3ED5112870095600BF938D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 			children = (
 				CB3ED5052870095300BF938D /* AppDelegate.swift */,
 				CB3ED5072870095300BF938D /* SceneDelegate.swift */,
-				CB3ED5092870095300BF938D /* ViewController.swift */,
+				CB3ED5092870095300BF938D /* BMIController.swift */,
 				CB3ED50B2870095300BF938D /* Main.storyboard */,
 				CB3ED50E2870095600BF938D /* Assets.xcassets */,
 				CB3ED5102870095600BF938D /* LaunchScreen.storyboard */,
@@ -138,7 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB3ED50A2870095300BF938D /* ViewController.swift in Sources */,
+				CB3ED50A2870095300BF938D /* BMIController.swift in Sources */,
 				CB3ED5062870095300BF938D /* AppDelegate.swift in Sources */,
 				CB3ED5082870095300BF938D /* SceneDelegate.swift in Sources */,
 			);
