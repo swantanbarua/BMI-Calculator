@@ -9,7 +9,6 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
-    
     @IBOutlet weak var bmiScore: UILabel!
     @IBOutlet weak var advice: UILabel!
     
@@ -21,6 +20,21 @@ class ResultViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         bmiScore.text = bmi
+        advice.preferredMaxLayoutWidth = 150
+        if Float(bmi ?? "0.0")! > 24.9{
+            advice.text = "Gain more weight"
+            view.backgroundColor = UIColor.systemRed
+        }
+        
+        else if Float(bmi ?? "0.0")! > 18.5{
+            advice.text = "Fit as a fiddle"
+            view.backgroundColor = UIColor.systemGreen
+        }
+        
+        else{
+            advice.text = "Eat less and workout"
+            view.backgroundColor = UIColor.systemPurple
+        }
     }
     
     @IBAction func recalculateBMI(_ sender: UIButton) {
