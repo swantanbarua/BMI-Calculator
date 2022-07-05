@@ -12,13 +12,19 @@ class ResultViewController: UIViewController {
     
     @IBOutlet weak var bmiScore: UILabel!
     @IBOutlet weak var advice: UILabel!
+    
+    var bmi: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        bmiScore.text = bmi
     }
     
     @IBAction func recalculateBMI(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
     }
     
     /*

@@ -41,7 +41,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="428" height="105"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="74" translatesAutoresizingMaskIntoConstraints="NO" id="q28-EV-PVS">
-                                                        <rect key="frame" x="85" y="33" width="258" height="39"/>
+                                                        <rect key="frame" x="107.33333333333333" y="33" width="213.33333333333337" height="39"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7M-E2-hgu">
                                                                 <rect key="frame" x="0.0" y="0.0" width="121.66666666666667" height="39"/>
@@ -49,8 +49,8 @@
                                                                 <color key="textColor" red="0.0" green="1" blue="0.77647058820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0  m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="kIL-Zh-uwS">
-                                                                <rect key="frame" x="195.66666666666669" y="0.0" width="62.333333333333314" height="39"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="kIL-Zh-uwS">
+                                                                <rect key="frame" x="195.66666666666669" y="0.0" width="17.666666666666657" height="39"/>
                                                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="35"/>
                                                                 <color key="textColor" red="0.0" green="1" blue="0.77647058820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -66,7 +66,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aZd-8H-dpJ" userLabel="Height Slider">
                                                 <rect key="frame" x="0.0" y="106" width="428" height="105.33333333333331"/>
                                                 <subviews>
-                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="SFm-lX-IYL">
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="SFm-lX-IYL">
                                                         <rect key="frame" x="68" y="37.666666666666686" width="292" height="31"/>
                                                         <connections>
                                                             <action selector="heightSliderChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="O7d-23-j5o"/>
@@ -89,7 +89,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="428" height="105"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="68" translatesAutoresizingMaskIntoConstraints="NO" id="2cJ-pc-s8D">
-                                                        <rect key="frame" x="81.666666666666686" y="33" width="265" height="39"/>
+                                                        <rect key="frame" x="107.33333333333333" y="33" width="213.33333333333337" height="39"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gb9-w7-yfd">
                                                                 <rect key="frame" x="0.0" y="0.0" width="127.66666666666667" height="39"/>
@@ -97,8 +97,8 @@
                                                                 <color key="textColor" red="0.0" green="1" blue="0.77647058820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="B1J-Zn-ERe">
-                                                                <rect key="frame" x="195.66666666666663" y="0.0" width="69.333333333333314" height="39"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="B1J-Zn-ERe">
+                                                                <rect key="frame" x="195.66666666666669" y="0.0" width="17.666666666666657" height="39"/>
                                                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="35"/>
                                                                 <color key="textColor" red="0.0" green="1" blue="0.77647058820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -114,7 +114,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4jD-Vi-IUT" userLabel="Weight Slider">
                                                 <rect key="frame" x="0.0" y="105.99999999999994" width="428" height="105"/>
                                                 <subviews>
-                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Sgy-4T-t1F">
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="500" translatesAutoresizingMaskIntoConstraints="NO" id="Sgy-4T-t1F">
                                                         <rect key="frame" x="68" y="37.666666666666742" width="292" height="31"/>
                                                         <connections>
                                                             <action selector="weightSliderChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="d6E-Ud-Trr"/>
@@ -175,7 +175,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-517" y="-133"/>
+            <point key="canvasLocation" x="-1615" y="-660"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="Wqe-UU-qZR">
@@ -275,7 +275,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a5x-oq-TZJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="221" y="-133"/>
+            <point key="canvasLocation" x="-921" y="-660"/>
         </scene>
     </scenes>
     <resources>
