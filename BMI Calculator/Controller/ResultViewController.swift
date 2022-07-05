@@ -9,13 +9,18 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
+    
+    @IBOutlet weak var bmiScore: UILabel!
+    @IBOutlet weak var advice: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func recalculateBMI(_ sender: UIButton) {
+    }
+    
     /*
     // MARK: - Navigation
 

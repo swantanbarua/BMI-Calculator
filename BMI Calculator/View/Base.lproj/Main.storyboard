@@ -170,11 +170,12 @@
                         <outlet property="heightSlider" destination="SFm-lX-IYL" id="hcc-X1-1Ql"/>
                         <outlet property="weightLabel" destination="B1J-Zn-ERe" id="JQV-o1-eEX"/>
                         <outlet property="weightSlider" destination="Sgy-4T-t1F" id="l1k-Xb-mbp"/>
+                        <segue destination="9fI-To-uQA" kind="presentation" identifier="goToResult" modalPresentationStyle="fullScreen" id="WUF-SE-tBg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-192" y="-13"/>
+            <point key="canvasLocation" x="-517" y="-133"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="Wqe-UU-qZR">
@@ -245,6 +246,9 @@
                                                     <fontDescription key="titleFontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="50"/>
                                                     <color key="baseForegroundColor" systemColor="systemGreenColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="recalculateBMI:" destination="9fI-To-uQA" eventType="touchUpInside" id="s6Y-7N-IsG"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -264,10 +268,14 @@
                             <constraint firstItem="52v-FL-tQk" firstAttribute="bottom" secondItem="4SA-nN-wZe" secondAttribute="bottom" id="hSD-3J-Mtv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="advice" destination="stl-fa-NAB" id="Kvj-sO-hLj"/>
+                        <outlet property="bmiScore" destination="2wm-9k-gQ0" id="qir-3K-aZR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a5x-oq-TZJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="509" y="-13"/>
+            <point key="canvasLocation" x="221" y="-133"/>
         </scene>
     </scenes>
     <resources>
