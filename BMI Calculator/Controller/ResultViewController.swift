@@ -22,7 +22,7 @@ class ResultViewController: UIViewController {
         bmiScore.text = bmi
         advice.preferredMaxLayoutWidth = 150
         if Float(bmi ?? "0.0")! > 24.9{
-            advice.text = "Gain more weight"
+            advice.text = "Eat less and workout"
             view.backgroundColor = UIColor.systemRed
         }
         
@@ -32,12 +32,12 @@ class ResultViewController: UIViewController {
         }
         
         else{
-            advice.text = "Eat less and workout"
+            advice.text = "Gain more weight"
             view.backgroundColor = UIColor.systemPurple
         }
     }
     
-    @IBAction func recalculateBMI(_ sender: UIButton) {
+    @IBAction func recalculate(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
     
