@@ -174,7 +174,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-496" y="9"/>
+            <point key="canvasLocation" x="-192" y="-13"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="Wqe-UU-qZR">
@@ -184,47 +184,90 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your BMI is :" textAlignment="justified" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="40" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Trd-qJ-ioY">
-                                <rect key="frame" x="48" y="188" width="333" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="60"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="60" translatesAutoresizingMaskIntoConstraints="NO" id="2wm-9k-gQ0">
-                                <rect key="frame" x="139" y="324" width="150" height="89"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="80"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Advice" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stl-fa-NAB">
-                                <rect key="frame" x="139" y="481" width="150" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="40"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Byv-JQ-cf7">
-                                <rect key="frame" x="85" y="692" width="258" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Recalculate">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="50"/>
-                                    <color key="baseForegroundColor" systemColor="systemGreenColor"/>
-                                </buttonConfiguration>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="4SA-nN-wZe">
+                                <rect key="frame" x="0.0" y="44" width="428" height="848"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SQh-qW-h50" userLabel="BMI Label">
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="211.33333333333334"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your BMI is :" textAlignment="justified" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="40" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Trd-qJ-ioY">
+                                                <rect key="frame" x="47.666666666666657" y="72.333333333333314" width="332.66666666666674" height="66.666666666666686"/>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="60"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Trd-qJ-ioY" firstAttribute="centerX" secondItem="SQh-qW-h50" secondAttribute="centerX" id="XQV-ah-68G"/>
+                                            <constraint firstItem="Trd-qJ-ioY" firstAttribute="centerY" secondItem="SQh-qW-h50" secondAttribute="centerY" id="fZb-A4-TS6"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7gT-Pk-gfs" userLabel="Score">
+                                        <rect key="frame" x="20" y="212.33333333333331" width="388" height="211.33333333333331"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="60" translatesAutoresizingMaskIntoConstraints="NO" id="2wm-9k-gQ0">
+                                                <rect key="frame" x="174" y="61.333333333333378" width="40" height="88.666666666666686"/>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="80"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="2wm-9k-gQ0" firstAttribute="centerY" secondItem="7gT-Pk-gfs" secondAttribute="centerY" id="1Ld-84-gfX"/>
+                                            <constraint firstItem="2wm-9k-gQ0" firstAttribute="centerX" secondItem="7gT-Pk-gfs" secondAttribute="centerX" id="xYJ-ei-05I"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="45c-Ri-eGt" userLabel="Advice">
+                                        <rect key="frame" x="20" y="424.66666666666674" width="388" height="211"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Advice" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stl-fa-NAB">
+                                                <rect key="frame" x="136.33333333333334" y="83.333333333333314" width="115.66666666666666" height="44.333333333333343"/>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="40"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="stl-fa-NAB" firstAttribute="centerY" secondItem="45c-Ri-eGt" secondAttribute="centerY" id="ecb-L0-ztj"/>
+                                            <constraint firstItem="stl-fa-NAB" firstAttribute="centerX" secondItem="45c-Ri-eGt" secondAttribute="centerX" id="hZh-V4-S5x"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YIe-Wi-8MZ" userLabel="Recalculate View">
+                                        <rect key="frame" x="20" y="636.66666666666663" width="388" height="211.33333333333337"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Byv-JQ-cf7">
+                                                <rect key="frame" x="65.333333333333343" y="71" width="257.33333333333326" height="69.666666666666686"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Recalculate">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="50"/>
+                                                    <color key="baseForegroundColor" systemColor="systemGreenColor"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Byv-JQ-cf7" firstAttribute="centerX" secondItem="YIe-Wi-8MZ" secondAttribute="centerX" id="Grf-N7-n82"/>
+                                            <constraint firstItem="Byv-JQ-cf7" firstAttribute="centerY" secondItem="YIe-Wi-8MZ" secondAttribute="centerY" id="jfh-RV-Rox"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="52v-FL-tQk"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="4SA-nN-wZe" firstAttribute="trailing" secondItem="52v-FL-tQk" secondAttribute="trailing" id="BF7-oG-IHR"/>
+                            <constraint firstItem="4SA-nN-wZe" firstAttribute="top" secondItem="52v-FL-tQk" secondAttribute="top" id="Qfk-gC-000"/>
+                            <constraint firstItem="4SA-nN-wZe" firstAttribute="leading" secondItem="52v-FL-tQk" secondAttribute="leading" id="RTQ-qK-DEZ"/>
+                            <constraint firstItem="52v-FL-tQk" firstAttribute="bottom" secondItem="4SA-nN-wZe" secondAttribute="bottom" id="hSD-3J-Mtv"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a5x-oq-TZJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="220" y="8"/>
+            <point key="canvasLocation" x="509" y="-13"/>
         </scene>
     </scenes>
     <resources>
