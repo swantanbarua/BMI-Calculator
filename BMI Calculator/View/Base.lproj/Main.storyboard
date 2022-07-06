@@ -234,10 +234,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YIe-Wi-8MZ" userLabel="Recalculate View">
-                                        <rect key="frame" x="20" y="636.66666666666663" width="388" height="211.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="636.66666666666663" width="428" height="211.33333333333337"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehM-h9-T1g">
-                                                <rect key="frame" x="65.333333333333343" y="71" width="257.33333333333326" height="69.666666666666686"/>
+                                                <rect key="frame" x="85.333333333333343" y="71" width="257.33333333333326" height="69.666666666666686"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Recalculate">
                                                     <backgroundConfiguration key="background">
@@ -257,6 +257,11 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="YIe-Wi-8MZ" firstAttribute="leading" secondItem="4SA-nN-wZe" secondAttribute="leading" id="IZ6-pZ-waf"/>
+                                    <constraint firstAttribute="trailing" secondItem="YIe-Wi-8MZ" secondAttribute="trailing" id="JKP-VU-lEV"/>
+                                    <constraint firstAttribute="bottom" secondItem="YIe-Wi-8MZ" secondAttribute="bottom" id="reD-zI-wSW"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="52v-FL-tQk"/>
@@ -275,7 +280,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a5x-oq-TZJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-416" y="-651"/>
+            <point key="canvasLocation" x="-416.35514018691589" y="-651.18790496760266"/>
         </scene>
     </scenes>
     <resources>
