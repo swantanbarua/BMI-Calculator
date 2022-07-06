@@ -114,7 +114,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4jD-Vi-IUT" userLabel="Weight Slider">
                                                 <rect key="frame" x="0.0" y="105.99999999999994" width="428" height="105"/>
                                                 <subviews>
-                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="500" translatesAutoresizingMaskIntoConstraints="NO" id="Sgy-4T-t1F">
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="300" translatesAutoresizingMaskIntoConstraints="NO" id="Sgy-4T-t1F">
                                                         <rect key="frame" x="68" y="37.666666666666742" width="292" height="31"/>
                                                         <connections>
                                                             <action selector="weightSliderChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="d6E-Ud-Trr"/>
@@ -175,7 +175,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1407" y="-668"/>
+            <point key="canvasLocation" x="-1136" y="-651"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="Wqe-UU-qZR">
@@ -275,7 +275,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a5x-oq-TZJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-670" y="-668"/>
+            <point key="canvasLocation" x="-416" y="-651"/>
         </scene>
     </scenes>
     <resources>
